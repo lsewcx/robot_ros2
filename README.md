@@ -3,6 +3,8 @@
 
 ## 文档地址
 
+https://www.yuque.com/lsewcx/gav2q5/gd9whyfm06lg4ukg?singleDoc# 《Jetson nano安装ros2开发》
+
 ## TODO
 
 - 代码转docker发布
