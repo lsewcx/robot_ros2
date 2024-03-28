@@ -1,0 +1,1 @@
+ros2 launch ydlidar_ros2_driver ydlidar_x3_view_launch.py

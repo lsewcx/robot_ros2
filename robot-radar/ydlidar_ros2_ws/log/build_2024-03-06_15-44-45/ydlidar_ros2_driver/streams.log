@@ -1,0 +1,46 @@
+[0.198s] Invoking command in '/data/robot-radar/ydlidar_ros2_ws/build/ydlidar_ros2_driver': /usr/local/bin/cmake /data/robot-radar/ydlidar_ros2_ws/src/ydlidar_ros2_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/data/robot-radar/ydlidar_ros2_ws/install/ydlidar_ros2_driver
+[0.327s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/install/share/ament_cmake/cmake)
+[0.333s] [33mCMake Warning (dev) at /opt/ros/foxy/install/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[0.334s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.334s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.334s]   the cmake_policy command to set the policy and suppress this warning.
+[0.335s] 
+[0.335s] Call Stack (most recent call first):
+[0.335s]   /opt/ros/foxy/install/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[0.336s]   /opt/ros/foxy/install/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[0.336s]   /opt/ros/foxy/install/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.337s]   /opt/ros/foxy/install/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.337s]   /opt/ros/foxy/install/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.337s]   CMakeLists.txt:15 (find_package)
+[0.338s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.338s] [0m
+[0.414s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.080s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.109s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/install/share/rclcpp/cmake)
+[1.270s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.287s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/install/share/rosidl_adapter/cmake)
+[2.052s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.278s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/install/share/rmw_implementation_cmake/cmake)
+[2.284s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.945s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/install/share/sensor_msgs/cmake)
+[3.467s] -- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/install/share/visualization_msgs/cmake)
+[3.787s] -- Found std_srvs: 2.0.5 (/opt/ros/foxy/install/share/std_srvs/cmake)
+[3.932s] [31mCMake Error at CMakeLists.txt:25 (find_package):
+[3.933s]   By not providing "Findydlidar_sdk.cmake" in CMAKE_MODULE_PATH this project
+[3.933s]   has asked CMake to find a package configuration file provided by
+[3.933s]   "ydlidar_sdk", but CMake did not find one.
+[3.935s] 
+[3.935s]   Could not find a package configuration file provided by "ydlidar_sdk" with
+[3.936s]   any of the following names:
+[3.936s] 
+[3.937s]     ydlidar_sdkConfig.cmake
+[3.937s]     ydlidar_sdk-config.cmake
+[3.937s] 
+[3.938s]   Add the installation prefix of "ydlidar_sdk" to CMAKE_PREFIX_PATH or set
+[3.938s]   "ydlidar_sdk_DIR" to a directory containing one of the above files.  If
+[3.938s]   "ydlidar_sdk" provides a separate development package or SDK, be sure it
+[3.939s]   has been installed.
+[3.939s] 
+[3.939s] [0m
+[3.940s] -- Configuring incomplete, errors occurred!
+[3.977s] Invoked command in '/data/robot-radar/ydlidar_ros2_ws/build/ydlidar_ros2_driver' returned '1': /usr/local/bin/cmake /data/robot-radar/ydlidar_ros2_ws/src/ydlidar_ros2_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/data/robot-radar/ydlidar_ros2_ws/install/ydlidar_ros2_driver

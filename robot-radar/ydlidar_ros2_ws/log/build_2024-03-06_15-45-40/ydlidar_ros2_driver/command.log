@@ -1,0 +1,6 @@
+Invoking command in '/data/robot-radar/ydlidar_ros2_ws/build/ydlidar_ros2_driver': /usr/local/bin/cmake /data/robot-radar/ydlidar_ros2_ws/src/ydlidar_ros2_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/data/robot-radar/ydlidar_ros2_ws/install/ydlidar_ros2_driver
+Invoked command in '/data/robot-radar/ydlidar_ros2_ws/build/ydlidar_ros2_driver' returned '0': /usr/local/bin/cmake /data/robot-radar/ydlidar_ros2_ws/src/ydlidar_ros2_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/data/robot-radar/ydlidar_ros2_ws/install/ydlidar_ros2_driver
+Invoking command in '/data/robot-radar/ydlidar_ros2_ws/build/ydlidar_ros2_driver': /usr/local/bin/cmake --build /data/robot-radar/ydlidar_ros2_ws/build/ydlidar_ros2_driver -- -j4 -l4
+Invoked command in '/data/robot-radar/ydlidar_ros2_ws/build/ydlidar_ros2_driver' returned '0': /usr/local/bin/cmake --build /data/robot-radar/ydlidar_ros2_ws/build/ydlidar_ros2_driver -- -j4 -l4
+Invoking command in '/data/robot-radar/ydlidar_ros2_ws/build/ydlidar_ros2_driver': /usr/local/bin/cmake --install /data/robot-radar/ydlidar_ros2_ws/build/ydlidar_ros2_driver
+Invoked command in '/data/robot-radar/ydlidar_ros2_ws/build/ydlidar_ros2_driver' returned '0': /usr/local/bin/cmake --install /data/robot-radar/ydlidar_ros2_ws/build/ydlidar_ros2_driver
