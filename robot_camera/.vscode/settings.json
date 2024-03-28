@@ -1,0 +1,14 @@
+{
+  "files.associations": {
+    ".eslintrc": "json",
+    "*.vue": "vue",
+    "*.cu": "cuda-cpp",
+    "ctime": "cpp",
+    "vector": "cpp",
+    "thread": "cpp",
+    "iosfwd": "cpp",
+    "memory": "cpp",
+    "xstring": "cpp",
+    "xutility": "cpp"
+  }
+}
