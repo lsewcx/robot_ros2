@@ -22,22 +22,39 @@ find_package(rclcpp REQUIRED)
 find_package(image_transport REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(sensor_msgs REQUIRED)
-
-# include directories
-include_directories(include)
+find_package(GTest REQUIRED)  # Add this line
 
 # add executable
 add_executable(camera_node src/image_publisher.cpp)
 
-# link dependencies
-ament_target_dependencies(camera_node 
-  ament_cmake 
-  OpenCV 
-  rclcpp 
-  image_transport 
-  cv_bridge 
+ament_target_dependencies(camera_node
+  rclcpp
+  OpenCV
+  image_transport
+  cv_bridge
   sensor_msgs
 )
+
+# add test executable
+add_executable(test_camera_node test/test_camera_node.cpp)
+
+# link test libraries
+target_link_libraries(test_camera_node ${GTEST_LIBRARIES} pthread)
+
+# add include directories for test executable
+target_include_directories(test_camera_node PRIVATE
+  ${rclcpp_INCLUDE_DIRS}
+  ${OpenCV_INCLUDE_DIRS}
+  ${image_transport_INCLUDE_DIRS}
+  ${cv_bridge_INCLUDE_DIRS}
+  ${sensor_msgs_INCLUDE_DIRS}
+  ${GTEST_INCLUDE_DIRS}
+  ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
+
+# enable testing and add test
+enable_testing()
+add_test(NAME test_camera_node COMMAND test_camera_node)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
