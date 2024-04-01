@@ -23,9 +23,11 @@ find_package(image_transport REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(sensor_msgs REQUIRED)
 
+# include directories
+include_directories(include)
 
 # add executable
-add_executable(camera_node src/camera_node.cpp)
+add_executable(camera_node src/image_publisher.cpp)
 
 # link dependencies
 ament_target_dependencies(camera_node 

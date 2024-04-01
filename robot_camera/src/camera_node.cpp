@@ -1,6 +1,6 @@
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/image.hpp>
-#include <image_transport/image_transport.hpp>
+#include <image_transport/image_transport.h>
 #include <cv_bridge/cv_bridge.h>
 #include <opencv2/opencv.hpp>
 
@@ -20,15 +20,8 @@ private:
         cap_ >> frame;
         if (!frame.empty())
         {
-            cv::Mat rgb_frame;
-            cv::cvtColor(frame, rgb_frame, cv::COLOR_BGR2RGB); // 将BGR图像转换为RGB图像
-            auto msg = cv_bridge::CvImage(std_msgs::msg::Header(), "rgb8", rgb_frame).toImageMsg();
+            auto msg = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", frame).toImageMsg();
             publisher_.publish(*msg);
-            RCLCPP_INFO(this->get_logger(), "图像已发布");
-        }
-        else
-        {
-            RCLCPP_ERROR(this->get_logger(), "没有摄像头");
         }
     }
 
