@@ -23,8 +23,6 @@ find_package(image_transport REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(sensor_msgs REQUIRED)
 
-# include header files
-include_directories(include)
 
 # add executable
 add_executable(camera_node src/camera_node.cpp)
